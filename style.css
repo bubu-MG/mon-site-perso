@@ -158,7 +158,7 @@ header {
 
 .projets-grid article:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 10px 3px var(--accent);
+    box-shadow: 0 0 6px 4px var(--accent);
 }
 
 .projets-grid article h3 {
