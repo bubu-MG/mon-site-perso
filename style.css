@@ -249,11 +249,11 @@ header {
 
 .pastille {
     position: absolute;
-    left: -18px;
+    left: -20px;
     top: 50%;
     transform: translateY(-50%);
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background-color: #4ade80;
     border-radius: 50%;
     animation: clignoter 1.5s ease-in-out infinite;
