@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="#">BuBu</a>
+            </div>
+            <nav class="header-navigation">
+                <ul>
+                    <li> <a href="#accueil">Accueil</a></li>
+                    <li> <a href="#projets">Projets</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <li> <a href="#a-propos">A propos</a></li>
+                </ul>
+           </nav>
+        </header>
+
+        <main>
+
+        <section id="accueil">
+            <h1>Bienvenue sur mon site</h1>
+            <p>Vous voulez un site web pour votre futur projet, vous êtes au bon endroit</p>
+            <a href="#contact" class="btn">Me contacter</a>
+        </section>
+
+        <section id="projets">
+            <h2>Quelques idées pour vous !</h2>
+                <div class="projets-grid">
+                    <article>
+                        <h3>Idée N°1</h3>
+                        <p>simple et moderne</p>
+                    </article>
+
+                    <article>
+                        <h3>Idée N°2</h3>
+                        <p>nature et design</p>
+                    </article>
+                </div>    
+        </section>
+
+        <section id="a-propos">
+            <h2>A propos</h2>
+            <p>Passionné par le développement front-end, je conçois des interfaces web.</p>
+
+            <aside class="status-encart">
+                <h3>Statut actuel</h3>
+                <p>Disponible pour de nouveaux projets freelance</p>
+            </aside>
+        </section>
+
+        <section id="contact">
+            <h2>Me contacter</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="nom">Votre nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div>
+                    <label for="email">Votre e-mail :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Votre message</label>
+                    <textarea name="message" id="message" rows="4" required></textarea>    
+                </div> 
+
+                <button type="submit" class="btn">Envoyer votre message</button>
+
+            </form>
+
+        </section>
+            
+        </main>   
+    
+        <footer>
+            <p>&copy; 2026 - Tous droits réservés.</p>
+
+            <nav aria-label="Liens légaux">
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                </ul>
+            </nav>
+        </footer>
+    
+    </body>
+</html>

@@ -1,0 +1,15 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Configuration VS Code
+.vscode/
+
+# Fichiers secrets / variables d'environnement
+.env
+*.local
+
+# Dépendances (NPM / Node)
+node_modules/
+dist/
+build/
