@@ -36,6 +36,7 @@ body {
                             /* HEADER */
 
 header {
+    z-index: 100;
     background-color: var(--fond-principal-2);
     position: sticky;
     top: 0;  
@@ -43,7 +44,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    gap: clamp(10px, 3vw, 25px);
+    gap: clamp(10px, 4vw, 25px);
     padding: clamp(15px, 4vw, 25px) clamp(10px, 1.5vw, 15px);
     border-bottom: 2px solid var(--accent);
 }
@@ -70,16 +71,16 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: clamp(8px, 2vw, 20px);
+    gap: clamp(8px, 6vw, 20px);
    
 }
 
 .header-navigation ul a {
-    padding: 8px;
+    padding: clamp(6px, 1.5vw, 8px) clamp(10px, 2.5vw, 16px);
     background-color:var(--fond-box);
     color: var(--text-clair);
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: clamp(0.95rem, 2.2vw, 1.2rem);
     font-weight: 500;
     border-radius:15px;
 }
