@@ -40,9 +40,11 @@ header {
     position: sticky;
     top: 0;  
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 25px;
+    gap: clamp(10px, 3vw, 25px);
+    padding: clamp(15px, 4vw, 25px) clamp(10px, 1.5vw, 15px);
     border-bottom: 2px solid var(--accent);
 }
 
@@ -66,7 +68,9 @@ header {
 .header-navigation ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(8px, 2vw, 20px);
    
 }
 
@@ -292,12 +296,68 @@ header {
                             /* CONTACT  */
 
 
+.container {
+    background-color: var(--fond-principal-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(30px, 6vw, 60px) 20px;
 
-                            
+
+}
+
+.login-box {
+    width: min(100%, 450px);
+    background-color:var(--fond-principal-1);
+    border-radius: 12px;
+    border: 2px solid var(--accent);
+    padding: clamp(15px, 4vw, 25px);
+
+  
+}
+
+.login-box h2 {
+    text-align: center;
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin: 30px auto;
+    border-bottom: 1px solid var(--text-clair);
+}
+
+.input-box input, .input-box textarea {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px 5px;
+    resize: none;
+
+}
+
+.input-box input {
+    height: 50px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.3s;
+    font-size: 1rem;
+}
 
 
                             /* RESPONSIVE  */
-
+/* 
 
 @media (max-width: 600px) {
     header {
@@ -311,4 +371,4 @@ header {
         justify-content: center;
         gap: 10px;
     }
-}
+} */
