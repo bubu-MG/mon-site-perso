@@ -98,7 +98,10 @@ header {
 
 section {
     scroll-margin-top: clamp(140px, 15vw, 155px);   
-}                           
+} 
+                            /* BOUTON                            */
+
+                       
 
                             /* ACCUEIL  */
 
@@ -324,13 +327,13 @@ section {
 .login-box h2 {
     text-align: center;
     font-size: clamp(1.4rem, 4vw, 2rem);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .input-box {
     position: relative;
     width: 100%;
-    margin: 30px auto;
+    margin: 40px auto;
     border: 1px solid var(--vert-sauge);
     border-radius: 10px;
     font-weight: 600;
@@ -346,8 +349,9 @@ section {
     font-size: 1rem;
     padding: 10px 5px;
     resize: none;
-  
-
+    color: var(--text);
+    font-weight: 600;
+    overflow: hidden;
 }
 
 .input-box input {
@@ -364,7 +368,23 @@ section {
     font-size: 1rem;
 }
 
+.input-box textarea + label {
+    top: 15px;
+   
 
+}
+
+.input-box input:focus + label,
+.input-box input:not(:placeholder-shown) + label{
+
+    transform: translateY(calc(-50% - 35px)) scale(0.9);
+
+}
+
+.input-box textarea:focus + label,
+.input-box textarea:not(:placeholder-shown) + label {
+      transform: translateY(calc(-50% - 26px)) scale(0.9);
+}
  
 
 
