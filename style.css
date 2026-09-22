@@ -96,6 +96,10 @@ header {
 
                             /* MAIN  */
 
+section {
+    scroll-margin-top: clamp(140px, 15vw, 155px);   
+}                           
+
                             /* ACCUEIL  */
 
 
@@ -327,7 +331,10 @@ header {
     position: relative;
     width: 100%;
     margin: 30px auto;
-    border-bottom: 1px solid var(--text-clair);
+    border: 1px solid var(--vert-sauge);
+    border-radius: 10px;
+    font-weight: 600;
+    
 }
 
 .input-box input, .input-box textarea {
@@ -339,6 +346,7 @@ header {
     font-size: 1rem;
     padding: 10px 5px;
     resize: none;
+  
 
 }
 
@@ -355,6 +363,11 @@ header {
     transition: 0.3s;
     font-size: 1rem;
 }
+
+
+ 
+
+
 
 
                             /* RESPONSIVE  */
